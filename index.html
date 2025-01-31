@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Chess Game</title>
+  
+  <!-- Chessboard.js CSS from CDN -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/css/chessboard.min.css"
+        integrity="sha512-FmCxP+4DYp/T+TrJNwXO9AcBYWgPcmQ+KRK7T5c9vNnD2yl+kR+eO3pLxNmkvt3E2R71Fic+B+G3dEexyzvWug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>GitHub Chess Game</h1>
+  </header>
+  
+  <div id="game">
+    <!-- Chessboard Container -->
+    <div id="board" style="width: 400px;"></div>
+    
+    <!-- Game Information & Controls -->
+    <div id="game-info">
+      <div id="status"></div>
+      <button id="resetButton">Reset Game</button>
+      
+      <!-- Move History -->
+      <div id="move-history">
+        <h2>Move History</h2>
+        <ol id="moves"></ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (required by Chessboard.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+          integrity="sha512-894yeW1viYPNE56A1ALUJ1SIC+5rOWEqlj2eWCE6yYtrmrHZfZo5YkD5cu6unvcfYuWCOzC1efD/lk8R6+fHnA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Chess.js for game logic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"
+          integrity="sha512-H6qz6aY8S8SMqS48T/5a2nuy5zx1P74xBqkLbtjUevWk9A6F0R1eJ0Xp+Iywhk/hOTI1Gv30/HfChjcoEJf7xw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Chessboard.js for board rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/js/chessboard.min.js"
+          integrity="sha512-3uJGPZh2OK0xvECdQcviY4/hEZwnT0X7AUaoE9L35vJbIf3t5Zb44yK5j8N0rR1/6vA43Y/wJrB8w9cOVRKGeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
