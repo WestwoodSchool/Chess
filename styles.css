@@ -1,0 +1,65 @@
+/* Basic reset and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+/* Game container layout */
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Container for game information (status, reset, history) */
+#game-info {
+  text-align: left;
+}
+
+/* Status message styling */
+#status {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Reset button styling */
+#resetButton {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Move history styling */
+#move-history {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#move-history h2 {
+  margin-top: 0;
+}
+
+/* Enhance the chessboard appearance */
+.chessboard {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border: 2px solid #333;
+}
